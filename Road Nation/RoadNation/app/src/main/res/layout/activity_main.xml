@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/driverRegistrationBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:onClick="registrationCredentials"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn"
+        app:layout_constraintBottom_toTopOf="@+id/driverLoginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/driverRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/homeDriverRegister"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:fontFamily="@font/adam"
+        app:layout_constraintBottom_toBottomOf="@+id/driverRegistrationBtn"
+        app:layout_constraintEnd_toEndOf="@+id/driverRegistrationBtn"
+        app:layout_constraintStart_toStartOf="@+id/driverRegistrationBtn"
+        app:layout_constraintTop_toTopOf="@+id/driverRegistrationBtn" />
+
+    <ImageButton
+        android:id="@+id/driverLoginBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="75dp"
+        android:background="@null"
+        android:onClick="driverLogin"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/driverLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/homeDriverLogin"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:fontFamily="@font/adam"
+        app:layout_constraintBottom_toBottomOf="@+id/driverLoginBtn"
+        app:layout_constraintEnd_toEndOf="@+id/driverLoginBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/driverLoginBtn" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/adam"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <ImageButton
+        android:id="@+id/clientLoginBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        android:background="@null"
+        android:onClick="clientLogin"
+        android:scaleType="fitXY"
+        android:src="@drawable/btnw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/clientLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/homeClientLogin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/adam"
+        app:layout_constraintBottom_toBottomOf="@+id/clientLoginBtn"
+        app:layout_constraintEnd_toEndOf="@+id/clientLoginBtn"
+        app:layout_constraintStart_toStartOf="@+id/clientLoginBtn"
+        app:layout_constraintTop_toTopOf="@+id/clientLoginBtn" />
+
+    <ImageButton
+        android:id="@+id/clientRegistrationBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:onClick="registrationCredentials"
+        android:scaleType="fitXY"
+        android:src="@drawable/btnw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientLoginBtn" />
+
+    <TextView
+        android:id="@+id/clientRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/homeClientRegister"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/adam"
+        app:layout_constraintBottom_toBottomOf="@+id/clientRegistrationBtn"
+        app:layout_constraintEnd_toEndOf="@+id/clientRegistrationBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clientRegistrationBtn" />
+
+
+</android.support.constraint.ConstraintLayout>
+

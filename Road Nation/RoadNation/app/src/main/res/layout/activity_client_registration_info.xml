@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientRegistrationInfo">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/adam"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/clientName"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:fontFamily="@font/adam"
+        android:gravity="center"
+        android:hint="@string/clientName"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/clientEmail"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/adam"
+        android:gravity="center"
+        android:hint="@string/clientEmail"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientName" />
+
+    <EditText
+        android:id="@+id/clientPhone"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/adam"
+        android:gravity="center"
+        android:hint="@string/clientPhone"
+        android:inputType="phone"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientEmail" />
+
+    <ImageView
+        android:id="@+id/clientProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:onClick="selectImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientPhone"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/clientProfileCircle"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientPhone" />
+
+    <ImageView
+        android:id="@+id/clientIdentity"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:onClick="selectImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientPhone"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/clientIdentityCircle"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientPhone" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/adam"
+        android:text="@string/clientProfile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientIdentity" />
+
+    <TextView
+        android:id="@+id/identity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adam"
+        android:text="@string/clientID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientProfile" />
+
+    <ImageButton
+        android:id="@+id/btnBG"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:onClick="next"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NEXT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/adam"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBG"
+        app:layout_constraintEnd_toEndOf="@+id/btnBG"
+        app:layout_constraintStart_toStartOf="@+id/btnBG"
+        app:layout_constraintTop_toTopOf="@+id/btnBG" />
+
+</android.support.constraint.ConstraintLayout>

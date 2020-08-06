@@ -1,0 +1,66 @@
+<resources>
+
+    <string name="app_name">Road Nation</string>
+
+    <string name="logo">ROAD\nNATION</string>
+
+    <string name="homeClientLogin">CLIENT LOGIN</string>
+    <string name="homeClientRegister">CLIENT REGISTER</string>
+    <string name="homeDriverLogin">DRIVER LOGIN</string>
+    <string name="homeDriverRegister">DRIVER REGISTER</string>
+
+    //---------------------------------------------------------
+
+    <string name="clientUsername">CLIENT USERNAME</string>
+    <string name="clientPassword">PASSWORD</string>
+
+    //---------------------------------------------------------
+
+    <string name="driverUsername">DRIVER USERNAME</string>
+    <string name="driverPassword">PASSWORD</string>
+
+    //---------------------------------------------------------
+
+    <string name="registration">CHOOSE YOUR USERNAME AND PASSWORD</string>
+
+    <string name="registrationUsername">USERNAME</string>
+    <string name="registrationPassword">PASSWORD</string>
+
+    //---------------------------------------------------------
+
+    <string name="driverName">NAME</string>
+    <string name="driverLastName">LAST NAME</string>
+    <string name="driverEmail">E-MAIL</string>
+    <string name="driverPhone">PHONE</string>
+
+    <string name="driverProfile">PROFILE</string>
+    <string name="driverID">IDENTITY</string>
+    <string name="driverLicense">LICENSE</string>
+
+    <string name="bikeProfile">PROFILE</string>
+    <string name="bikeLicense">LICENSE</string>
+    <string name="bikeInsurance">INSURANCE</string>
+
+    <string name="bikeCC">ENGINE CC</string>
+
+    <string name="helmet">HELMET</string>
+
+    //---------------------------------------------------------
+
+    <string name="clientName">NAME</string>
+    <string name="clientEmail">E-MAIL</string>
+    <string name="clientPhone">PHONE</string>
+
+    <string name="clientProfile">PROFILE</string>
+    <string name="clientID">Identity</string>
+
+    //---------------------------------------------------------
+
+    <string name="profile">PROFILE</string>
+    <string name="requests">REQUESTS</string>
+
+    //---------------------------------------------------------
+
+    <string name="NEXT">NEXT</string>
+
+</resources>
