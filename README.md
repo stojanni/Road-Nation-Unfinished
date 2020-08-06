@@ -12,6 +12,6 @@ This is an android app that was ment to use SQL, Google Maps and Stripe. I will 
 
 The application implemented a complete account system, with info, rating and media and i was designing the map and payment systems when we stopped it. I will post the logo screen below and you can download and build the project to see the rest if you like.
 
-<img src="https://github.com/Mistral-Designs/Road-Nation/blob/master/okthess.jpg">
+![ACCELERATOR](https://github.com/Mistral-Designs/Road-Nation/blob/master/okthess.jpg)
 <img src="https://github.com/Mistral-Designs/Road-Nation/blob/master/ui.png" width="400" height="auto">
 
